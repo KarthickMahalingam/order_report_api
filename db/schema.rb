@@ -52,22 +52,18 @@ ActiveRecord::Schema.define(version: 20171222070950) do
 
   create_table "orders", force: :cascade do |t|
     t.integer  "customer_id"
-    t.string   "status"
+    t.string   "order_status"
     t.float    "total_price"
     t.integer  "no_of_items"
     t.datetime "order_placed_at"
-    t.datetime "order_shipper_at"
+    t.datetime "order_shipped_at"
     t.datetime "order_delivered_at"
-    t.string   "shipto_address"
-    t.string   "shipto_city"
-    t.string   "shipto_state"
-    t.string   "shipto_country"
-    t.string   "shipto_zip_code"
     t.string   "payment_mode",       default: "CREDIT"
-    t.string   "tracking_number"
+    t.integer  "shipment_id"
     t.datetime "created_at",                            null: false
     t.datetime "updated_at",                            null: false
     t.index ["customer_id"], name: "index_orders_on_customer_id", using: :btree
+    t.index ["shipment_id"], name: "index_orders_on_shipment_id", using: :btree
   end
 
   create_table "product_categories", force: :cascade do |t|
@@ -101,6 +97,19 @@ ActiveRecord::Schema.define(version: 20171222070950) do
     t.integer  "supplier_id"
   end
 
+  create_table "shipments", force: :cascade do |t|
+    t.string   "shipment_address"
+    t.string   "shipment_city"
+    t.string   "shipment_state"
+    t.string   "shipment_country"
+    t.string   "shipment_zip_code"
+    t.text     "shipment_status"
+    t.text     "shipment_comments"
+    t.string   "carrier"
+    t.datetime "created_at",        null: false
+    t.datetime "updated_at",        null: false
+  end
+
   create_table "suppliers", force: :cascade do |t|
     t.string  "supplier_name"
     t.string  "email"
@@ -117,6 +126,7 @@ ActiveRecord::Schema.define(version: 20171222070950) do
   add_foreign_key "order_details", "product_units"
   add_foreign_key "order_details", "products"
   add_foreign_key "orders", "customers"
+  add_foreign_key "orders", "shipments"
   add_foreign_key "products", "product_units"
   add_foreign_key "products", "suppliers"
 end

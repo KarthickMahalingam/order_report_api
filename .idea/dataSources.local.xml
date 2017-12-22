@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="Rails orderapi: production" uuid="90b9af27-8776-42ea-808d-6274210f4e51">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
+      <first-sync>true</first-sync>
+      <user-name>karthick</user-name>
+    </data-source>
+    <data-source name="Rails orderapi: development" uuid="f7188d6e-a282-4838-9c25-eca83ee0f60c">
+      <database-info product="PostgreSQL" version="9.6.6" jdbc-version="4.2" driver-name="PostgreSQL JDBC Driver" driver-version="42.1.1">
+        <identifier-quote-string>&quot;</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact" />
+      <introspection-schemas>orderapi_development:public</introspection-schemas>
+    </data-source>
+    <data-source name="Rails orderapi: test" uuid="08a71729-73a8-45ab-8810-fdfd76c5c47b">
+      <database-info product="PostgreSQL" version="9.6.6" jdbc-version="4.2" driver-name="PostgreSQL JDBC Driver" driver-version="42.1.1">
+        <identifier-quote-string>&quot;</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact" />
+      <introspection-schemas>orderapi_test:public</introspection-schemas>
+    </data-source>
+  </component>
+</project>
