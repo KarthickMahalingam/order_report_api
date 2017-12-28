@@ -4,7 +4,7 @@ class CreateCustomer < ActiveRecord::Migration[5.0]
       t.string :first_name
       t.string :last_name
       t.boolean :active
-      t.integer :phone
+      t.numeric :phone
       t.string :email
       t.string :address
       t.string :city

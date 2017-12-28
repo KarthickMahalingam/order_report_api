@@ -14,7 +14,6 @@ class CreateProduct < ActiveRecord::Migration
       t.float :tax
       t.boolean :product_available
       t.timestamps null:false
-      t.references :supplier, foreign_key: true
     end
   end
 end

@@ -2,13 +2,37 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cee7f54b-6da6-4081-8c29-c8434cf53f5d" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/models/order.rb" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/models/product.rb" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/controllers/concerns/response.rb" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/controllers/customer_order_controller.rb" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/controllers/export_report_controller.rb" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/controllers/periodic_report_controller.rb" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/controllers/product_report_controller.rb" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/controllers/reports_controller.rb" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/models/category.rb" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/models/order_detail.rb" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/models/product_category.rb" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/models/product_unit.rb" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/services/export_csv.rb" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/services/product_getter.rb" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/db/report.sql" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/f7188d6e-a282-4838-9c25-eca83ee0f60c.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/f7188d6e-a282-4838-9c25-eca83ee0f60c.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/f7188d6e-a282-4838-9c25-eca83ee0f60c/storage_v2/_src_/database/orderapi_development.iFFwkg/schema/public.abK9xQ.meta" afterPath="$PROJECT_DIR$/.idea/dataSources/f7188d6e-a282-4838-9c25-eca83ee0f60c/storage_v2/_src_/database/orderapi_development.iFFwkg/schema/public.abK9xQ.meta" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/application_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/application_controller.rb" />
+      <change beforePath="$PROJECT_DIR$/app/models/application_record.rb" afterPath="$PROJECT_DIR$/app/models/application_record.rb" />
       <change beforePath="$PROJECT_DIR$/app/models/customer.rb" afterPath="$PROJECT_DIR$/app/models/customer.rb" />
+      <change beforePath="$PROJECT_DIR$/app/models/order.rb" afterPath="$PROJECT_DIR$/app/models/order.rb" />
+      <change beforePath="$PROJECT_DIR$/app/models/product.rb" afterPath="$PROJECT_DIR$/app/models/product.rb" />
+      <change beforePath="$PROJECT_DIR$/config/application.rb" afterPath="$PROJECT_DIR$/config/application.rb" />
+      <change beforePath="$PROJECT_DIR$/config/database.yml" afterPath="$PROJECT_DIR$/config/database.yml" />
+      <change beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
+      <change beforePath="$PROJECT_DIR$/db/migrate/20171221232109_create_supplier.rb" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/db/migrate/20171222002400_create_product.rb" afterPath="$PROJECT_DIR$/db/migrate/20171222002400_create_product.rb" />
+      <change beforePath="$PROJECT_DIR$/db/migrate/20171222050827_create_customer.rb" afterPath="$PROJECT_DIR$/db/migrate/20171222050827_create_customer.rb" />
+      <change beforePath="$PROJECT_DIR$/db/migrate/20171222070208_create_shipment.rb" afterPath="" />
       <change beforePath="$PROJECT_DIR$/db/migrate/20171222070210_create_order.rb" afterPath="$PROJECT_DIR$/db/migrate/20171222070210_create_order.rb" />
-      <change beforePath="$PROJECT_DIR$/db/migrate/20171222074837_create_customers.rb" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/db/migrate/20171222070950_create_order_detail.rb" afterPath="$PROJECT_DIR$/db/migrate/20171222070950_create_order_detail.rb" />
       <change beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,8 +43,11 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/orderapi@db_create__orderapi.coverage" NAME="db:create: orderapi Coverage Results" MODIFIED="1513906732589" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="orderapi" />
+    <SUITE FILE_PATH="coverage/orderapi@db_create__orderapi.coverage" NAME="db:create: orderapi Coverage Results" MODIFIED="1514354804769" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="orderapi" />
+    <SUITE FILE_PATH="coverage/orderapi@db_drop__orderapi.coverage" NAME="db:drop: orderapi Coverage Results" MODIFIED="1514354792014" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="orderapi" />
+    <SUITE FILE_PATH="coverage/orderapi@db_migrate__orderapi.coverage" NAME="db:migrate: orderapi Coverage Results" MODIFIED="1514354830209" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="orderapi" />
     <SUITE FILE_PATH="coverage/orderapi@db_rollback__orderapi.coverage" NAME="db:rollback: orderapi Coverage Results" MODIFIED="1513923148759" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="orderapi" />
+    <SUITE FILE_PATH="coverage/orderapi@Development__orderapi.coverage" NAME="Development: orderapi Coverage Results" MODIFIED="1514325489935" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="orderapi" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -36,51 +63,192 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="20171221232109_create_supplier.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db/migrate/20171221232109_create_supplier.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="32" lean-forward="false" selection-start-line="0" selection-start-column="32" selection-end-line="0" selection-end-column="32" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="20171222050827_create_customer.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db/migrate/20171222050827_create_customer.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="15" column="3" lean-forward="false" selection-start-line="15" selection-start-column="3" selection-end-line="15" selection-end-column="3" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="20171222070210_create_order.rb" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/db/migrate/20171222070210_create_order.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="11" column="27" lean-forward="false" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="product.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/product.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="18">
-              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+            <state relative-caret-position="215">
+              <caret line="75" column="28" lean-forward="false" selection-start-line="75" selection-start-column="28" selection-end-line="75" selection-end-column="28" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="customer.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/customer.rb">
+      <file leaf-file-name="product_unit.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/product_unit.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="36">
+              <caret line="2" column="3" lean-forward="false" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RailsDependency/Order" pinned="false" current-in-tab="false">
+        <entry file="uml://RailsDependency/Order">
+          <provider selected="true" editor-type-id="UmlEditorProvider">
+            <state>
+              <ID>RailsDependency</ID>
+              <OriginalElement>Order</OriginalElement>
+              <nodes>
+                <node x="3.999999999999943" y="834.0">Customer</node>
+                <node x="585.5799999999999" y="930.0">Category</node>
+                <node x="425.69999999999993" y="0.0">ApplicationRecord</node>
+                <node x="10.5" y="367.0">Order</node>
+                <node x="381.9427777777778" y="367.0">Product</node>
+                <node x="635.3677777777777" y="176.5">ProductCategory</node>
+                <node x="131.36777777777775" y="92.0">OrderDetail</node>
+                <node x="382.36777777777775" y="152.0">ProductUnit</node>
+              </nodes>
+              <notes />
+              <edges>
+                <edge source="Order" target="ApplicationRecord">
+                  <point x="-62.5" y="-208.5" />
+                  <point x="73.0" y="342.0" />
+                  <point x="101.375" y="342.0" />
+                  <point x="101.375" y="62.0" />
+                  <point x="460.19999999999993" y="62.0" />
+                  <point x="-46.0" y="16.0" />
+                </edge>
+                <edge source="Order" target="OrderDetail">
+                  <point x="62.5" y="-208.5" />
+                  <point x="198.0" y="342.0" />
+                  <point x="189.11777777777775" y="342.0" />
+                  <point x="-57.75" y="112.5" />
+                </edge>
+                <edge source="Product" target="ProductUnit">
+                  <point x="-61.800000000000125" y="-208.5" />
+                  <point x="474.6427777777777" y="342.0" />
+                  <point x="440.36777777777775" y="342.0" />
+                  <point x="-58.0" y="52.5" />
+                </edge>
+                <edge source="Product" target="OrderDetail">
+                  <point x="-123.60000000000008" y="-208.5" />
+                  <point x="412.84277777777777" y="342.0" />
+                  <point x="304.61777777777775" y="342.0" />
+                  <point x="57.75" y="112.5" />
+                </edge>
+                <edge source="Product" target="ProductCategory">
+                  <point x="123.59999999999997" y="-208.5" />
+                  <point x="660.0427777777778" y="342.0" />
+                  <point x="712.6177777777777" y="342.0" />
+                  <point x="-77.25" y="28.0" />
+                </edge>
+                <edge source="Product" target="ApplicationRecord">
+                  <point x="61.7999999999999" y="-208.5" />
+                  <point x="598.2427777777777" y="342.0" />
+                  <point x="624.8677777777777" y="342.0" />
+                  <point x="624.8677777777777" y="72.0" />
+                  <point x="529.1999999999999" y="72.0" />
+                  <point x="23.0" y="16.0" />
+                </edge>
+                <edge source="ProductUnit" target="Product">
+                  <point x="58.0" y="52.5" />
+                  <point x="556.3677777777777" y="342.0" />
+                  <point x="536.4427777777778" y="342.0" />
+                  <point x="-5.6843418860808015E-14" y="-208.5" />
+                </edge>
+                <edge source="Product" target="Category">
+                  <point x="77.24999999999994" y="208.5" />
+                  <point x="613.6927777777778" y="804.0" />
+                  <point x="701.4549999999999" y="804.0" />
+                  <point x="-38.625" y="-64.5" />
+                </edge>
+                <edge source="Customer" target="ApplicationRecord">
+                  <point x="-63.333333333333314" y="-160.5" />
+                  <point x="35.66666666666663" y="814.0" />
+                  <point x="0.0" y="814.0" />
+                  <point x="0.0" y="52.0" />
+                  <point x="437.19999999999993" y="52.0" />
+                  <point x="-69.0" y="16.0" />
+                </edge>
+                <edge source="ProductUnit" target="ApplicationRecord">
+                  <point x="0.0" y="-52.5" />
+                  <point x="498.36777777777775" y="72.0" />
+                  <point x="506.19999999999993" y="72.0" />
+                  <point x="0.0" y="16.0" />
+                </edge>
+                <edge source="Order" target="Customer">
+                  <point x="62.5" y="208.5" />
+                  <point x="198.0" y="814.0" />
+                  <point x="162.33333333333326" y="814.0" />
+                  <point x="63.333333333333314" y="-160.5" />
+                </edge>
+                <edge source="Category" target="ProductCategory">
+                  <point x="38.625" y="-64.5" />
+                  <point x="778.7049999999999" y="804.0" />
+                  <point x="867.1177777777777" y="804.0" />
+                  <point x="77.25" y="28.0" />
+                </edge>
+                <edge source="ProductCategory" target="ApplicationRecord">
+                  <point x="0.0" y="-28.0" />
+                  <point x="789.8677777777777" y="62.0" />
+                  <point x="552.1999999999999" y="62.0" />
+                  <point x="46.0" y="16.0" />
+                </edge>
+                <edge source="Category" target="ApplicationRecord">
+                  <point x="115.875" y="-64.5" />
+                  <point x="855.9549999999999" y="814.0" />
+                  <point x="954.8677777777777" y="814.0" />
+                  <point x="954.8677777777777" y="52.0" />
+                  <point x="575.1999999999999" y="52.0" />
+                  <point x="69.0" y="16.0" />
+                </edge>
+                <edge source="Category" target="Product">
+                  <point x="-115.875" y="-64.5" />
+                  <point x="624.2049999999999" y="814.0" />
+                  <point x="459.1927777777778" y="814.0" />
+                  <point x="-77.25" y="208.5" />
+                </edge>
+                <edge source="OrderDetail" target="ApplicationRecord">
+                  <point x="0.0" y="-112.5" />
+                  <point x="246.86777777777775" y="72.0" />
+                  <point x="483.19999999999993" y="72.0" />
+                  <point x="-23.0" y="16.0" />
+                </edge>
+                <edge source="Customer" target="Order">
+                  <point x="0.0" y="-160.5" />
+                  <point x="98.99999999999994" y="814.0" />
+                  <point x="73.0" y="814.0" />
+                  <point x="-62.5" y="208.5" />
+                </edge>
+              </edges>
+              <settings layout="Hierarchic Group" zoom="0.5486542443064182" x="-56.09433962264154" y="427.433962264151" />
+              <SelectedNodes>
+                <node>ProductCategory</node>
+              </SelectedNodes>
+              <Categories>
+                <Category>Association fields</Category>
+                <Category>Migration fields</Category>
+              </Categories>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="product_getter.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/services/product_getter.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="558">
+              <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="report.sql" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/db/report.sql">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="19" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="customer.rb" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/models/customer.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="334">
+              <caret line="35" column="26" lean-forward="false" selection-start-line="35" selection-start-column="26" selection-end-line="35" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -90,43 +258,50 @@
         <entry file="file://$PROJECT_DIR$/app/models/order.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="36">
-              <caret line="2" column="3" lean-forward="false" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
+              <caret line="2" column="27" lean-forward="false" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="20171222002400_create_product.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db/migrate/20171222002400_create_product.rb">
+      <file leaf-file-name="product_category.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/product_category.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="16" column="47" lean-forward="false" selection-start-line="16" selection-start-column="47" selection-end-line="16" selection-end-column="47" />
+            <state relative-caret-position="0">
+              <caret line="0" column="41" lean-forward="false" selection-start-line="0" selection-start-column="41" selection-end-line="0" selection-end-column="41" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="20171222070950_create_order_detail.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db/migrate/20171222070950_create_order_detail.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="10" column="21" lean-forward="false" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="20171222002398_create_product_unit.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db/migrate/20171222002398_create_product_unit.rb">
+      <file leaf-file-name="reports_controller.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/reports_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="54">
-              <caret line="3" column="20" lean-forward="false" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
+              <caret line="3" column="27" lean-forward="false" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="order_detail.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/order_detail.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="18">
+              <caret line="1" column="20" lean-forward="false" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Ruby Class Template" />
+      </list>
+    </option>
   </component>
   <component name="GeneratorOptions">
     <option name="VCS_SHOW_CONFIRMATION" value="true" />
@@ -138,7 +313,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/config/database.yml" />
         <option value="$PROJECT_DIR$/db/migrate/20171222002400_create_suppliers.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20171222002400_create_supplier.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20171222012926_create_join_table_product_category.rb" />
@@ -148,16 +322,38 @@
         <option value="$PROJECT_DIR$/db/migrate/20171222051920_create_product_unit.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20171222002398_create_product_unit.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20171222012926_create_product_category.rb" />
-        <option value="$PROJECT_DIR$/db/migrate/20171222002400_create_product.rb" />
-        <option value="$PROJECT_DIR$/db/migrate/20171222050827_create_customer.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20171221232109_create_supplier.rb" />
+        <option value="$PROJECT_DIR$/db/migrate/20171222182102_create_shipment.rb" />
+        <option value="$PROJECT_DIR$/db/migrate/20171222070948_create_shipment.rb" />
+        <option value="$PROJECT_DIR$/app/models/orderdetail.rb" />
+        <option value="$PROJECT_DIR$/app/models/shipment.rb" />
+        <option value="$PROJECT_DIR$/db/migrate/20171222070208_create_shipment.rb" />
+        <option value="$PROJECT_DIR$/db/migrate/20171222070210_create_order.rb" />
+        <option value="$PROJECT_DIR$/db/migrate/20171222002400_create_product.rb" />
+        <option value="$PROJECT_DIR$/config/database.yml" />
+        <option value="$PROJECT_DIR$/app/models/category.rb" />
+        <option value="$PROJECT_DIR$/app/models/product_category.rb" />
+        <option value="$PROJECT_DIR$/app/models/product_unit.rb" />
+        <option value="$PROJECT_DIR$/db/migrate/20171222050827_create_customer.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/concerns/response.rb" />
+        <option value="$PROJECT_DIR$/config/application.rb" />
+        <option value="$PROJECT_DIR$/app/models/application_record.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/application_controller.rb" />
+        <option value="$PROJECT_DIR$/db/report.sql" />
+        <option value="$PROJECT_DIR$/app/models/order.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/daily_report_controller.rb" />
+        <option value="$PROJECT_DIR$/app/services/export_csv.rb" />
+        <option value="$PROJECT_DIR$/db/migrate/20171222212222_load_data.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20171222070950_create_order_detail.rb" />
+        <option value="$PROJECT_DIR$/config/routes.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/customer_order_controller.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/periodic_report_controller.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/export_report_controller.rb" />
+        <option value="$PROJECT_DIR$/app/services/product_getter.rb" />
+        <option value="$PROJECT_DIR$/app/models/order_detail.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/reports_controller.rb" />
         <option value="$PROJECT_DIR$/app/models/product.rb" />
         <option value="$PROJECT_DIR$/app/models/customer.rb" />
-        <option value="$PROJECT_DIR$/app/models/order.rb" />
-        <option value="$PROJECT_DIR$/db/migrate/20171222182102_create_shipment.rb" />
-        <option value="$PROJECT_DIR$/db/migrate/20171222070210_create_order.rb" />
-        <option value="$PROJECT_DIR$/db/migrate/20171222070948_create_shipment.rb" />
       </list>
     </option>
   </component>
@@ -166,6 +362,13 @@
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="25" />
@@ -188,6 +391,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="RailsProjectView" />
       <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
@@ -206,32 +410,31 @@
               <item name="orderapi" type="b2602c69:ProjectViewProjectNode" />
               <item name="orderapi" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="channels" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="orderapi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="orderapi" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="channels" type="462c0819:PsiDirectoryNode" />
-              <item name="application_cable" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="orderapi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="orderapi" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="controllers" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="orderapi" type="b2602c69:ProjectViewProjectNode" />
               <item name="orderapi" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="jobs" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+              <item name="concerns" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="orderapi" type="b2602c69:ProjectViewProjectNode" />
               <item name="orderapi" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="models" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="orderapi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="orderapi" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="services" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="orderapi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="orderapi" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="orderapi" type="b2602c69:ProjectViewProjectNode" />
@@ -248,7 +451,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="RailsProjectView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -270,7 +472,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Rake.db:rollback: orderapi">
+  <component name="RunManager" selected="Rake.db:migrate: orderapi">
     <configuration name="Development: orderapi" type="RailsRunConfigurationType" factoryName="Rails">
       <predefined_log_file id="RUBY_RAILS_SERVER" enabled="true" />
       <module name="orderapi" />
@@ -337,6 +539,54 @@
         </COVERAGE_PATTERN>
       </EXTENSION>
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_NAME" VALUE="db:create" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ARGS" VALUE="" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ATTACHED_TEST_FRAMEWORKS" VALUE="" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_TRACE" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_DRYRUN" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_PREREQS" VALUE="false" />
+    </configuration>
+    <configuration name="db:drop: orderapi" type="RakeRunConfigurationType" factoryName="Rake" temporary="true">
+      <module name="orderapi" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs>
+        <env name="RAILS_ENV" value="development" />
+      </envs>
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
+        <COVERAGE_PATTERN ENABLED="true">
+          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
+        </COVERAGE_PATTERN>
+      </EXTENSION>
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_NAME" VALUE="db:drop" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ARGS" VALUE="" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ATTACHED_TEST_FRAMEWORKS" VALUE="" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_TRACE" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_DRYRUN" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_PREREQS" VALUE="false" />
+    </configuration>
+    <configuration name="db:migrate: orderapi" type="RakeRunConfigurationType" factoryName="Rake" temporary="true">
+      <module name="orderapi" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs>
+        <env name="RAILS_ENV" value="development" />
+      </envs>
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
+        <COVERAGE_PATTERN ENABLED="true">
+          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
+        </COVERAGE_PATTERN>
+      </EXTENSION>
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_NAME" VALUE="db:migrate" />
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ARGS" VALUE="" />
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ATTACHED_TEST_FRAMEWORKS" VALUE="" />
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_TRACE" VALUE="false" />
@@ -413,18 +663,22 @@
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_DRYRUN" VALUE="false" />
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_PREREQS" VALUE="false" />
     </configuration>
-    <list size="6">
+    <list size="8">
       <item index="0" class="java.lang.String" itemvalue="Rake.test: orderapi" />
       <item index="1" class="java.lang.String" itemvalue="Rake.spec: orderapi" />
       <item index="2" class="java.lang.String" itemvalue="Rails.Production: orderapi" />
       <item index="3" class="java.lang.String" itemvalue="Rails.Development: orderapi" />
       <item index="4" class="java.lang.String" itemvalue="Rake.db:create: orderapi" />
       <item index="5" class="java.lang.String" itemvalue="Rake.db:rollback: orderapi" />
+      <item index="6" class="java.lang.String" itemvalue="Rake.db:drop: orderapi" />
+      <item index="7" class="java.lang.String" itemvalue="Rake.db:migrate: orderapi" />
     </list>
     <recent_temporary>
-      <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="Rake.db:rollback: orderapi" />
+      <list size="4">
+        <item index="0" class="java.lang.String" itemvalue="Rake.db:migrate: orderapi" />
         <item index="1" class="java.lang.String" itemvalue="Rake.db:create: orderapi" />
+        <item index="2" class="java.lang.String" itemvalue="Rake.db:drop: orderapi" />
+        <item index="3" class="java.lang.String" itemvalue="Rake.db:rollback: orderapi" />
       </list>
     </recent_temporary>
   </component>
@@ -446,12 +700,19 @@
       <workItem from="1513906079586" duration="2087000" />
       <workItem from="1513914870331" duration="12350000" />
       <workItem from="1513966098482" duration="501000" />
-      <workItem from="1513966652360" duration="1753000" />
+      <workItem from="1513966652360" duration="14795000" />
+      <workItem from="1513987505475" duration="10015000" />
+      <workItem from="1514070791628" duration="14168000" />
+      <workItem from="1514165731591" duration="16094000" />
+      <workItem from="1514229382948" duration="17648000" />
+      <workItem from="1514269347729" duration="6739000" />
+      <workItem from="1514313708200" duration="32515000" />
+      <workItem from="1514428014400" duration="15834000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22261000" />
+    <option name="totallyTimeSpent" value="148316000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -466,23 +727,23 @@
     <frame x="0" y="25" width="1366" height="743" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2659091" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32879046" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33049405" sideWeight="0.5030303" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29545453" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32879046" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33049405" sideWeight="0.5030303" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15984848" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32879046" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32879046" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32879046" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32879046" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32879046" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33049405" sideWeight="0.4969697" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33049405" sideWeight="0.4969697" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32879046" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -497,59 +758,10 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/db/migrate/20171221231945_create_category.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="46" lean-forward="false" selection-start-line="0" selection-start-column="46" selection-end-line="0" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20171221232109_create_supplier.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="32" lean-forward="false" selection-start-line="0" selection-start-column="32" selection-end-line="0" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20171222050827_create_customer.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="15" column="3" lean-forward="false" selection-start-line="15" selection-start-column="3" selection-end-line="15" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20171222070210_create_order.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="36" lean-forward="false" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/product.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/customer.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20171222070950_create_order_detail.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="10" column="21" lean-forward="false" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -557,79 +769,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
           <caret line="3" column="20" lean-forward="false" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/schema.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="15" column="28" lean-forward="false" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/order.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="3" lean-forward="true" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20171221231945_create_category.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="46" lean-forward="false" selection-start-line="0" selection-start-column="46" selection-end-line="0" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20171221232109_create_supplier.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="32" lean-forward="false" selection-start-line="0" selection-start-column="32" selection-end-line="0" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20171222050827_create_customer.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="15" column="3" lean-forward="false" selection-start-line="15" selection-start-column="3" selection-end-line="15" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20171222070210_create_order.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="36" lean-forward="false" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/customer.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20171222070950_create_order_detail.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" column="21" lean-forward="false" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20171222002398_create_product_unit.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" column="20" lean-forward="false" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -653,7 +792,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
           <caret line="3" column="16" lean-forward="false" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -684,18 +822,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
           <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20171221232109_create_supplier.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="29" lean-forward="true" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20171221232109_create_supplier.rb" />
     <entry file="file://$PROJECT_DIR$/db/migrate/20171222002400_create_product.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -717,20 +847,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/database.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1116">
-          <caret line="62" column="15" lean-forward="true" selection-start-line="62" selection-start-column="15" selection-end-line="62" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="51" lean-forward="true" selection-start-line="0" selection-start-column="51" selection-end-line="0" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="248">
@@ -747,21 +863,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20171221231945_create_category.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="46" lean-forward="false" selection-start-line="0" selection-start-column="46" selection-end-line="0" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/seeds.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20171222012926_create_product_category.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
@@ -769,51 +870,341 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20171222074837_create_customers.rb" />
+    <entry file="file://$PROJECT_DIR$/app/models/shipment.rb" />
+    <entry file="file://$PROJECT_DIR$/db/migrate/20171222070208_create_shipment.rb" />
+    <entry file="file://$PROJECT_DIR$/db/migrate/20171221232109_create_supplier.rb" />
+    <entry file="file://$PROJECT_DIR$/db/migrate/20171221231945_create_category.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="18" lean-forward="true" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/database.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="370">
+          <caret line="66" column="14" lean-forward="true" selection-start-line="66" selection-start-column="14" selection-end-line="66" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20171222002398_create_product_unit.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
           <caret line="3" column="20" lean-forward="false" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20171222050827_create_customer.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="19" lean-forward="true" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20171222070210_create_order.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="14" column="16" lean-forward="false" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/application.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20171221232109_create_supplier.rb">
+    <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.6/lib/active_record/connection_adapters/postgresql_adapter.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="113">
+          <caret line="597" column="0" lean-forward="false" selection-start-line="597" selection-start-column="0" selection-end-line="597" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="32" lean-forward="false" selection-start-line="0" selection-start-column="32" selection-end-line="0" selection-end-column="32" />
+          <caret line="0" column="11" lean-forward="false" selection-start-line="0" selection-start-column="11" selection-end-line="0" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/application_record.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20171222002400_create_product.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="21" lean-forward="true" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20171222212222_load_data.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-373">
+          <caret line="35" column="39" lean-forward="false" selection-start-line="35" selection-start-column="39" selection-end-line="35" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/concerns/response.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="23" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="60" lean-forward="false" selection-start-line="6" selection-start-column="60" selection-end-line="6" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/product_report_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="5" lean-forward="false" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/export_report_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="16" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/services/export_csv.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="5" lean-forward="false" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/periodic_report_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" column="16" lean-forward="false" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20171222070950_create_order_detail.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" column="21" lean-forward="false" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
+        <state relative-caret-position="162">
+          <caret line="9" column="24" lean-forward="false" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20171222050827_create_customer.rb">
+    <entry file="file://$PROJECT_DIR$/db/seeds.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="15" column="3" lean-forward="false" selection-start-line="15" selection-start-column="3" selection-end-line="15" selection-end-column="3" />
+        <state relative-caret-position="126">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20171222074837_create_customers.rb" />
-    <entry file="file://$PROJECT_DIR$/app/models/product.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/customer.rb">
+    <entry file="file://$PROJECT_DIR$/app/models/category.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <caret line="0" column="34" lean-forward="false" selection-start-line="0" selection-start-column="34" selection-end-line="0" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/order_detail.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" column="20" lean-forward="false" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/services/product_getter.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="558">
+          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://RailsDependency/Order">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>RailsDependency</ID>
+          <OriginalElement>Order</OriginalElement>
+          <nodes>
+            <node x="3.999999999999943" y="834.0">Customer</node>
+            <node x="585.5799999999999" y="930.0">Category</node>
+            <node x="425.69999999999993" y="0.0">ApplicationRecord</node>
+            <node x="10.5" y="367.0">Order</node>
+            <node x="381.9427777777778" y="367.0">Product</node>
+            <node x="635.3677777777777" y="176.5">ProductCategory</node>
+            <node x="131.36777777777775" y="92.0">OrderDetail</node>
+            <node x="382.36777777777775" y="152.0">ProductUnit</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="Order" target="ApplicationRecord">
+              <point x="-62.5" y="-208.5" />
+              <point x="73.0" y="342.0" />
+              <point x="101.375" y="342.0" />
+              <point x="101.375" y="62.0" />
+              <point x="460.19999999999993" y="62.0" />
+              <point x="-46.0" y="16.0" />
+            </edge>
+            <edge source="Order" target="OrderDetail">
+              <point x="62.5" y="-208.5" />
+              <point x="198.0" y="342.0" />
+              <point x="189.11777777777775" y="342.0" />
+              <point x="-57.75" y="112.5" />
+            </edge>
+            <edge source="Product" target="ProductUnit">
+              <point x="-61.800000000000125" y="-208.5" />
+              <point x="474.6427777777777" y="342.0" />
+              <point x="440.36777777777775" y="342.0" />
+              <point x="-58.0" y="52.5" />
+            </edge>
+            <edge source="Product" target="OrderDetail">
+              <point x="-123.60000000000008" y="-208.5" />
+              <point x="412.84277777777777" y="342.0" />
+              <point x="304.61777777777775" y="342.0" />
+              <point x="57.75" y="112.5" />
+            </edge>
+            <edge source="Product" target="ProductCategory">
+              <point x="123.59999999999997" y="-208.5" />
+              <point x="660.0427777777778" y="342.0" />
+              <point x="712.6177777777777" y="342.0" />
+              <point x="-77.25" y="28.0" />
+            </edge>
+            <edge source="Product" target="ApplicationRecord">
+              <point x="61.7999999999999" y="-208.5" />
+              <point x="598.2427777777777" y="342.0" />
+              <point x="624.8677777777777" y="342.0" />
+              <point x="624.8677777777777" y="72.0" />
+              <point x="529.1999999999999" y="72.0" />
+              <point x="23.0" y="16.0" />
+            </edge>
+            <edge source="ProductUnit" target="Product">
+              <point x="58.0" y="52.5" />
+              <point x="556.3677777777777" y="342.0" />
+              <point x="536.4427777777778" y="342.0" />
+              <point x="-5.6843418860808015E-14" y="-208.5" />
+            </edge>
+            <edge source="Product" target="Category">
+              <point x="77.24999999999994" y="208.5" />
+              <point x="613.6927777777778" y="804.0" />
+              <point x="701.4549999999999" y="804.0" />
+              <point x="-38.625" y="-64.5" />
+            </edge>
+            <edge source="Customer" target="ApplicationRecord">
+              <point x="-63.333333333333314" y="-160.5" />
+              <point x="35.66666666666663" y="814.0" />
+              <point x="0.0" y="814.0" />
+              <point x="0.0" y="52.0" />
+              <point x="437.19999999999993" y="52.0" />
+              <point x="-69.0" y="16.0" />
+            </edge>
+            <edge source="ProductUnit" target="ApplicationRecord">
+              <point x="0.0" y="-52.5" />
+              <point x="498.36777777777775" y="72.0" />
+              <point x="506.19999999999993" y="72.0" />
+              <point x="0.0" y="16.0" />
+            </edge>
+            <edge source="Order" target="Customer">
+              <point x="62.5" y="208.5" />
+              <point x="198.0" y="814.0" />
+              <point x="162.33333333333326" y="814.0" />
+              <point x="63.333333333333314" y="-160.5" />
+            </edge>
+            <edge source="Category" target="ProductCategory">
+              <point x="38.625" y="-64.5" />
+              <point x="778.7049999999999" y="804.0" />
+              <point x="867.1177777777777" y="804.0" />
+              <point x="77.25" y="28.0" />
+            </edge>
+            <edge source="ProductCategory" target="ApplicationRecord">
+              <point x="0.0" y="-28.0" />
+              <point x="789.8677777777777" y="62.0" />
+              <point x="552.1999999999999" y="62.0" />
+              <point x="46.0" y="16.0" />
+            </edge>
+            <edge source="Category" target="ApplicationRecord">
+              <point x="115.875" y="-64.5" />
+              <point x="855.9549999999999" y="814.0" />
+              <point x="954.8677777777777" y="814.0" />
+              <point x="954.8677777777777" y="52.0" />
+              <point x="575.1999999999999" y="52.0" />
+              <point x="69.0" y="16.0" />
+            </edge>
+            <edge source="Category" target="Product">
+              <point x="-115.875" y="-64.5" />
+              <point x="624.2049999999999" y="814.0" />
+              <point x="459.1927777777778" y="814.0" />
+              <point x="-77.25" y="208.5" />
+            </edge>
+            <edge source="OrderDetail" target="ApplicationRecord">
+              <point x="0.0" y="-112.5" />
+              <point x="246.86777777777775" y="72.0" />
+              <point x="483.19999999999993" y="72.0" />
+              <point x="-23.0" y="16.0" />
+            </edge>
+            <edge source="Customer" target="Order">
+              <point x="0.0" y="-160.5" />
+              <point x="98.99999999999994" y="814.0" />
+              <point x="73.0" y="814.0" />
+              <point x="-62.5" y="208.5" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="0.5486542443064182" x="-56.09433962264154" y="427.433962264151" />
+          <SelectedNodes>
+            <node>ProductCategory</node>
+          </SelectedNodes>
+          <Categories>
+            <Category>Association fields</Category>
+            <Category>Migration fields</Category>
+          </Categories>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/customer_order_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="3" lean-forward="true" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/product_category.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="41" lean-forward="false" selection-start-line="0" selection-start-column="41" selection-end-line="0" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/reports_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="27" lean-forward="false" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/report.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="19" selection-end-column="18" />
           <folding />
         </state>
       </provider>
@@ -821,31 +1212,31 @@
     <entry file="file://$PROJECT_DIR$/app/models/order.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
+          <caret line="2" column="27" lean-forward="false" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/product_unit.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
           <caret line="2" column="3" lean-forward="false" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20171222002400_create_product.rb">
+    <entry file="file://$PROJECT_DIR$/app/models/product.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="16" column="47" lean-forward="false" selection-start-line="16" selection-start-column="47" selection-end-line="16" selection-end-column="47" />
+        <state relative-caret-position="215">
+          <caret line="75" column="28" lean-forward="false" selection-start-line="75" selection-start-column="28" selection-end-line="75" selection-end-column="28" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20171222070208_create_shipment.rb">
+    <entry file="file://$PROJECT_DIR$/app/models/customer.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="25" lean-forward="false" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20171222070210_create_order.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="27" lean-forward="false" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
+        <state relative-caret-position="334">
+          <caret line="35" column="26" lean-forward="false" selection-start-line="35" selection-start-column="26" selection-end-line="35" selection-end-column="26" />
           <folding />
         </state>
       </provider>

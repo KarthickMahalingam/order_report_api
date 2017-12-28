@@ -66,5 +66,4 @@ test:
 production:
   <<: *default
   database: orderapi_production
-  username: orderapi
   password: <%= ENV['ORDERAPI_DATABASE_PASSWORD'] %>

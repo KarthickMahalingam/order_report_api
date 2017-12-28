@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171222070950) do
+ActiveRecord::Schema.define(version: 20171222212222) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -25,7 +25,7 @@ ActiveRecord::Schema.define(version: 20171222070950) do
     t.string  "first_name"
     t.string  "last_name"
     t.boolean "active"
-    t.integer "phone"
+    t.decimal "phone"
     t.string  "email"
     t.string  "address"
     t.string  "city"
@@ -38,16 +38,14 @@ ActiveRecord::Schema.define(version: 20171222070950) do
     t.integer "product_id"
     t.integer "order_id"
     t.float   "price"
-    t.integer "qty_ordered"
+    t.float   "qty_ordered"
     t.float   "purchase_unit_price"
     t.float   "purchase_tax"
     t.float   "purchase_discount"
     t.string  "color"
     t.string  "size"
-    t.integer "product_unit_id"
     t.index ["order_id"], name: "index_order_details_on_order_id", using: :btree
     t.index ["product_id"], name: "index_order_details_on_product_id", using: :btree
-    t.index ["product_unit_id"], name: "index_order_details_on_product_unit_id", using: :btree
   end
 
   create_table "orders", force: :cascade do |t|
@@ -55,15 +53,19 @@ ActiveRecord::Schema.define(version: 20171222070950) do
     t.string   "order_status"
     t.float    "total_price"
     t.integer  "no_of_items"
+    t.string   "shipment_address"
+    t.string   "shipment_city"
+    t.string   "shipment_state"
+    t.string   "shipment_country"
+    t.string   "shipment_zip_code"
+    t.text     "shipment_comments"
     t.datetime "order_placed_at"
     t.datetime "order_shipped_at"
     t.datetime "order_delivered_at"
     t.string   "payment_mode",       default: "CREDIT"
-    t.integer  "shipment_id"
     t.datetime "created_at",                            null: false
     t.datetime "updated_at",                            null: false
     t.index ["customer_id"], name: "index_orders_on_customer_id", using: :btree
-    t.index ["shipment_id"], name: "index_orders_on_shipment_id", using: :btree
   end
 
   create_table "product_categories", force: :cascade do |t|
@@ -94,39 +96,10 @@ ActiveRecord::Schema.define(version: 20171222070950) do
     t.boolean  "product_available"
     t.datetime "created_at",        null: false
     t.datetime "updated_at",        null: false
-    t.integer  "supplier_id"
-  end
-
-  create_table "shipments", force: :cascade do |t|
-    t.string   "shipment_address"
-    t.string   "shipment_city"
-    t.string   "shipment_state"
-    t.string   "shipment_country"
-    t.string   "shipment_zip_code"
-    t.text     "shipment_status"
-    t.text     "shipment_comments"
-    t.string   "carrier"
-    t.datetime "created_at",        null: false
-    t.datetime "updated_at",        null: false
-  end
-
-  create_table "suppliers", force: :cascade do |t|
-    t.string  "supplier_name"
-    t.string  "email"
-    t.integer "phone_number"
-    t.string  "supplier_address"
-    t.string  "country"
-    t.string  "city"
-    t.string  "state"
-    t.boolean "active"
-    t.integer "zip_code"
   end
 
   add_foreign_key "order_details", "orders"
-  add_foreign_key "order_details", "product_units"
   add_foreign_key "order_details", "products"
   add_foreign_key "orders", "customers"
-  add_foreign_key "orders", "shipments"
   add_foreign_key "products", "product_units"
-  add_foreign_key "products", "suppliers"
 end

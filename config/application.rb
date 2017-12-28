@@ -14,8 +14,8 @@ require "rails/test_unit/railtie"
 
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
-Bundler.require(*Rails.groups)
 
+require 'csv'
 module Orderapi
   class Application < Rails::Application
     # Settings in config/environments/* take precedence over those specified here.
