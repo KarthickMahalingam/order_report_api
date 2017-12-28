@@ -1,40 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cee7f54b-6da6-4081-8c29-c8434cf53f5d" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/controllers/concerns/response.rb" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/controllers/customer_order_controller.rb" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/controllers/export_report_controller.rb" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/controllers/periodic_report_controller.rb" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/controllers/product_report_controller.rb" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/controllers/reports_controller.rb" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/models/category.rb" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/models/order_detail.rb" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/models/product_category.rb" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/models/product_unit.rb" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/services/export_csv.rb" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/services/product_getter.rb" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/db/report.sql" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/f7188d6e-a282-4838-9c25-eca83ee0f60c.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/f7188d6e-a282-4838-9c25-eca83ee0f60c.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/f7188d6e-a282-4838-9c25-eca83ee0f60c/storage_v2/_src_/database/orderapi_development.iFFwkg/schema/public.abK9xQ.meta" afterPath="$PROJECT_DIR$/.idea/dataSources/f7188d6e-a282-4838-9c25-eca83ee0f60c/storage_v2/_src_/database/orderapi_development.iFFwkg/schema/public.abK9xQ.meta" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/application_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/application_controller.rb" />
-      <change beforePath="$PROJECT_DIR$/app/models/application_record.rb" afterPath="$PROJECT_DIR$/app/models/application_record.rb" />
-      <change beforePath="$PROJECT_DIR$/app/models/customer.rb" afterPath="$PROJECT_DIR$/app/models/customer.rb" />
-      <change beforePath="$PROJECT_DIR$/app/models/order.rb" afterPath="$PROJECT_DIR$/app/models/order.rb" />
-      <change beforePath="$PROJECT_DIR$/app/models/product.rb" afterPath="$PROJECT_DIR$/app/models/product.rb" />
-      <change beforePath="$PROJECT_DIR$/config/application.rb" afterPath="$PROJECT_DIR$/config/application.rb" />
-      <change beforePath="$PROJECT_DIR$/config/database.yml" afterPath="$PROJECT_DIR$/config/database.yml" />
-      <change beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
-      <change beforePath="$PROJECT_DIR$/db/migrate/20171221232109_create_supplier.rb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/db/migrate/20171222002400_create_product.rb" afterPath="$PROJECT_DIR$/db/migrate/20171222002400_create_product.rb" />
-      <change beforePath="$PROJECT_DIR$/db/migrate/20171222050827_create_customer.rb" afterPath="$PROJECT_DIR$/db/migrate/20171222050827_create_customer.rb" />
-      <change beforePath="$PROJECT_DIR$/db/migrate/20171222070208_create_shipment.rb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/db/migrate/20171222070210_create_order.rb" afterPath="$PROJECT_DIR$/db/migrate/20171222070210_create_order.rb" />
-      <change beforePath="$PROJECT_DIR$/db/migrate/20171222070950_create_order_detail.rb" afterPath="$PROJECT_DIR$/db/migrate/20171222070950_create_order_detail.rb" />
-      <change beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
-    </list>
+    <list default="true" id="cee7f54b-6da6-4081-8c29-c8434cf53f5d" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -248,7 +215,7 @@
         <entry file="file://$PROJECT_DIR$/app/models/customer.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="334">
-              <caret line="35" column="26" lean-forward="false" selection-start-line="35" selection-start-column="26" selection-end-line="35" selection-end-column="26" />
+              <caret line="35" column="26" lean-forward="true" selection-start-line="35" selection-start-column="26" selection-end-line="35" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -707,12 +674,12 @@
       <workItem from="1514229382948" duration="17648000" />
       <workItem from="1514269347729" duration="6739000" />
       <workItem from="1514313708200" duration="32515000" />
-      <workItem from="1514428014400" duration="15834000" />
+      <workItem from="1514428014400" duration="15867000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="148316000" />
+    <option name="totallyTimeSpent" value="148349000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1236,7 +1203,7 @@
     <entry file="file://$PROJECT_DIR$/app/models/customer.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="334">
-          <caret line="35" column="26" lean-forward="false" selection-start-line="35" selection-start-column="26" selection-end-line="35" selection-end-column="26" />
+          <caret line="35" column="26" lean-forward="true" selection-start-line="35" selection-start-column="26" selection-end-line="35" selection-end-column="26" />
           <folding />
         </state>
       </provider>
