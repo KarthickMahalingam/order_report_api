@@ -15,6 +15,10 @@ RSpec.describe ReportsController, type: :controller do
       get 'show'
       expect(response.body).to_not be_nil
     end
+
+    it 'should validate the routing' do
+      expect(get: "report").to route_to(controller: 'reports',action: 'show')
+    end
   end
 end
 

@@ -2,41 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cee7f54b-6da6-4081-8c29-c8434cf53f5d" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/spec/factories/category_factory.rb" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/spec/factories/customer_factory.rb" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/spec/factories/order_detail_factory.rb" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/spec/factories/order_factory.rb" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/spec/factories/product_category_factory.rb" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/spec/factories/product_factory.rb" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/spec/factories/product_unit_factory.rb" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/spec/models/product_unit_spec.rb" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/spec/support/factory_bot.rb" />
-      <change beforePath="$PROJECT_DIR$/.idea/.generators" afterPath="$PROJECT_DIR$/.idea/.generators" />
-      <change beforePath="$PROJECT_DIR$/.idea/orderapi.iml" afterPath="$PROJECT_DIR$/.idea/orderapi.iml" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
-      <change beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/export_report_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/export_report_controller.rb" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/periodic_report_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/periodic_report_controller.rb" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/product_report_controller.rb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/models/customer.rb" afterPath="$PROJECT_DIR$/app/models/customer.rb" />
-      <change beforePath="$PROJECT_DIR$/app/models/product.rb" afterPath="$PROJECT_DIR$/app/models/product.rb" />
-      <change beforePath="$PROJECT_DIR$/app/services/export_csv.rb" afterPath="$PROJECT_DIR$/app/services/export_csv.rb" />
-      <change beforePath="$PROJECT_DIR$/app/services/product_getter.rb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
-      <change beforePath="$PROJECT_DIR$/db/migrate/20171222212222_load_data.rb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/db/report.sql" afterPath="$PROJECT_DIR$/db/report.sql" />
-      <change beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
-      <change beforePath="$PROJECT_DIR$/db/seeds.rb" afterPath="$PROJECT_DIR$/db/seeds.rb" />
-      <change beforePath="$PROJECT_DIR$/spec/factories/customers.rb" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/spec/models/customer_spec.rb" afterPath="$PROJECT_DIR$/spec/models/customer_spec.rb" />
-      <change beforePath="$PROJECT_DIR$/test/controllers/.keep" afterPath="$PROJECT_DIR$/spec/controllers/reports_controller_spec.rb" />
-      <change beforePath="$PROJECT_DIR$/test/fixtures/.keep" afterPath="$PROJECT_DIR$/spec/models/category_spec.rb" />
-      <change beforePath="$PROJECT_DIR$/test/fixtures/files/.keep" afterPath="$PROJECT_DIR$/spec/models/order_detail_spec.rb" />
-      <change beforePath="$PROJECT_DIR$/test/integration/.keep" afterPath="$PROJECT_DIR$/spec/models/order_spec.rb" />
-      <change beforePath="$PROJECT_DIR$/test/mailers/.keep" afterPath="$PROJECT_DIR$/spec/models/product_category_spec.rb" />
-      <change beforePath="$PROJECT_DIR$/test/models/.keep" afterPath="$PROJECT_DIR$/spec/models/product_spec.rb" />
-      <change beforePath="$PROJECT_DIR$/test/test_helper.rb" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/spec/controllers/customer_order_controller_spec.rb" afterPath="$PROJECT_DIR$/spec/controllers/customer_order_controller_spec.rb" />
+      <change beforePath="$PROJECT_DIR$/spec/controllers/reports_controller_spec.rb" afterPath="$PROJECT_DIR$/spec/controllers/reports_controller_spec.rb" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -69,8 +36,8 @@
       <file leaf-file-name="reports_controller_spec.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/spec/controllers/reports_controller_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="18">
-              <caret line="1" column="54" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="54" />
+            <state relative-caret-position="285">
+              <caret line="19" column="26" lean-forward="false" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -79,8 +46,18 @@
       <file leaf-file-name="customer_order_controller_spec.rb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/spec/controllers/customer_order_controller_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="36">
-              <caret line="2" column="2" lean-forward="false" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
+            <state relative-caret-position="95">
+              <caret line="7" column="39" lean-forward="false" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="routes.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/routes.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="5" column="76" lean-forward="false" selection-start-line="5" selection-start-column="76" selection-end-line="5" selection-end-column="76" />
               <folding />
             </state>
           </provider>
@@ -144,7 +121,6 @@
         <option value="$PROJECT_DIR$/spec/factories/order_detail_factory.rb" />
         <option value="$PROJECT_DIR$/app/models/customer.rb" />
         <option value="$PROJECT_DIR$/app/controllers/reports_controller.rb" />
-        <option value="$PROJECT_DIR$/spec/controllers/reports_controller_spec.rb" />
         <option value="$PROJECT_DIR$/spec/spec_helper.rb" />
         <option value="$PROJECT_DIR$/spec/rails_helper.rb" />
         <option value="$PROJECT_DIR$/Gemfile" />
@@ -155,6 +131,7 @@
         <option value="$PROJECT_DIR$/spec/models/category_spec.rb" />
         <option value="$PROJECT_DIR$/spec/models/product_spec.rb" />
         <option value="$PROJECT_DIR$/spec/models/product_unit_spec.rb" />
+        <option value="$PROJECT_DIR$/spec/controllers/reports_controller_spec.rb" />
         <option value="$PROJECT_DIR$/spec/controllers/customer_order_controller_spec.rb" />
       </list>
     </option>
@@ -540,12 +517,12 @@
       <workItem from="1514313708200" duration="32515000" />
       <workItem from="1514428014400" duration="23021000" />
       <workItem from="1514486660086" duration="10103000" />
-      <workItem from="1514511703635" duration="11232000" />
+      <workItem from="1514511703635" duration="12141000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="176838000" />
+    <option name="totallyTimeSpent" value="177747000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -832,14 +809,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/routes.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="76" lean-forward="false" selection-start-line="5" selection-start-column="76" selection-end-line="5" selection-end-column="76" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20171222212222_load_data.rb" />
     <entry file="file://$PROJECT_DIR$/db/seeds.rb">
       <provider selected="true" editor-type-id="text-editor">
@@ -1078,18 +1047,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="76" lean-forward="false" selection-start-line="5" selection-start-column="76" selection-end-line="5" selection-end-column="76" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/spec/controllers/reports_controller_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" column="54" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="54" />
+        <state relative-caret-position="285">
+          <caret line="19" column="26" lean-forward="false" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/controllers/customer_order_controller_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="2" lean-forward="false" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
+        <state relative-caret-position="95">
+          <caret line="7" column="39" lean-forward="false" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
           <folding />
         </state>
       </provider>
