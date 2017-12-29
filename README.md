@@ -25,19 +25,19 @@
  #### API endpoints
  ```
  GET /report                                                  ===>  'Get category based customer report'
- GET /report/daily                                          ===>  'Get daily report on product-wise'
- GET /report/weekly                                       ===>  'Get weekly report on product-wise'
- GET /report/monthly                                     ===>  'Get monthly report on product-wise'
- GET /report/daily/10-10-2017/28-12-2017    ===> 'Get product-wise daily report within date range'
- GET /report/weekly/10-10-2017/28-12-2017 ===> 'Get product-wise weekly report within date range'
- GET /report/monthly/10-10-2017/28-12-2017===> 'Get product-wise monthly report within date range'
- GET /report/customer/4                                 ===>  'Get order details of a customer'
- GET /report/daily/export                                 ===> 'Export daily report to CSV'
- GET /report/weekly/export                              ===> 'Export weekly report to CSV'
- GET /report/monthly/export                           ===> 'Export monthly report to CSV'
- GET /report/daily/10-10-2017/28-12-2017/export    ===> 'Export date range daily report to CSV'
- GET /report/weekly/10-10-2017/28-12-2017/export   ===> 'Export date range weekly report to CSV'
- GET /report/monthly/10-10-2017/28-12-2017/export  ===> 'Exprot date range monthly report to CSV'
+ GET /report/daily                                            ===>  'Get daily report on product-wise'
+ GET /report/weekly                                           ===>  'Get weekly report on product-wise'
+ GET /report/monthly                                          ===>  'Get monthly report on product-wise'
+ GET /report/daily/10-10-2017/28-12-2017                      ===> 'Get product-wise daily report within date range'
+ GET /report/weekly/10-10-2017/28-12-2017                     ===> 'Get product-wise weekly report within date range'
+ GET /report/monthly/10-10-2017/28-12-2017                    ===> 'Get product-wise monthly report within date range'
+ GET /report/customer/4                                       ===>  'Get order details of a customer'
+ GET /report/daily/export                                     ===> 'Export daily report to CSV'
+ GET /report/weekly/export                                    ===> 'Export weekly report to CSV'
+ GET /report/monthly/export                                   ===> 'Export monthly report to CSV'
+ GET /report/daily/10-10-2017/28-12-2017/export               ===> 'Export date range daily report to CSV'
+ GET /report/weekly/10-10-2017/28-12-2017/export              ===> 'Export date range weekly report to CSV'
+ GET /report/monthly/10-10-2017/28-12-2017/export             ===> 'Exprot date range monthly report to CSV'
  
 ```
 
