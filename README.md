@@ -1,4 +1,6 @@
 # README
+### Heroku --> https://order-report-api.herokuapp.com/report
+
 #### Rails API to generate reports for the following
  1) Customers order history based on categories
  2) Daily/weekly/monthly report showing the product sold history
