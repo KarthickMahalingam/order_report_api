@@ -51,4 +51,22 @@ We can design by normalizing the order table into 2 tables with relations. One t
 ##### When facing a high traffic and limited supply of a particular item, how do you distribute the inventory among customers checking out?
 We can distribute the items, that are on high demand by restricting with a time frame. If a product is on high demand, we could notify the user that the product will be added in the cart and will be alive only for certain duration after which the product can be left available on stock again for other customers. Customer with first come will be served first. Or, on the other way, we prioritize the customer order based on customer ranking. Customer with high ranking should be prioritized first for the on-demand product. This way, we can create competition among customers to shop more to improve their ranking, so that they get prioritized on high demand product.
 
+### How to run the application:
+Download the project.
+Migrate the datebase:
+```
+ rails db:create
+ rails db:migrate
+```
+Seed the sample datasets:
+```
+ rails db:seed
+```
+
+Run the application :
+
+```
+rails s
+```
+
   
