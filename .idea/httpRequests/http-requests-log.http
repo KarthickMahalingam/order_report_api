@@ -1,0 +1,16 @@
+GET http://localhost:3000/report/daily
+Accept:*/*
+Cache-Control:no-cache
+
+<> 2017-12-28T103824.200.json
+
+###
+
+GET http://localhost:3000/report
+Accept:*/*
+Cache-Control:no-cache
+
+<> 2017-12-28T103809.200.json
+
+###
+
