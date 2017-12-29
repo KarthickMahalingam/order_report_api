@@ -1,6 +1,6 @@
 class ExportCsv
   def to_csv(result)
-    header = %w[product_name qty_sold sold_on]
+    header = %w[product_name qty_sold unit_type sold_on]
     CSV.generate do |csv|
       csv << header
       result.each do |product|

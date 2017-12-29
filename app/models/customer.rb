@@ -2,15 +2,18 @@ class Customer < ApplicationRecord
   has_many :orders, dependent: :destroy
 
   scope :customer_display_fields, lambda {
-    select('customers.id AS customer_id,
+    select(['customers.id AS customer_id,
             customers.first_name AS customer_first_name,
             categories.id AS category_id,
             categories.category_name AS category_name,
-            sum(order_details.qty_ordered) AS number_purchased')
+            sum(order_details.qty_ordered) AS number_purchased'])
   }
 
   scope :with_group_by, lambda {
-    group('customer_id,customer_first_name, category_id, category_name')
+    group('customers.id,
+           customers.first_name,
+           categories.id,
+           categories.category_name')
   }
 
   def self.generate_customer_order_report(customer_id)
@@ -27,14 +30,13 @@ class Customer < ApplicationRecord
   end
 
   def self.generate_customers_order_report
-    Customer.customer_purchase_query
+    Customer.customer_purchase_query.as_json(except: :id)
   end
 
   def self.customer_purchase_query
     Customer.joins(orders: [order_details: [product: :categories]])
-            .customer_display_fields
             .with_group_by
-
+            .customer_display_fields
   end
 end
 

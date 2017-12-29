@@ -5,86 +5,58 @@ class Product < ApplicationRecord
   has_many :order_details
   enum order_status: {waiting_for_delivery: 0, on_its_way: 1, delivered: 2}
 
-  scope :group_with_relations, lambda {
-    group('customers.id,
-           customers.first_name,
-           categories.category_name,
-           orders.order_placed_at')
-  }
-
-  scope :join_orders, lambda {
-    joins('INNER JOIN orders orders on orders.id = order_details.order_id')
-  }
-
-  scope :join_customers, lambda {
-    joins('INNER JOIN customers customers on
-            customers.id = orders.customer_id')
-  }
-
-  scope :join_product_units, lambda {
-    joins('INNER JOIN product_units product_units on
-            product_units.id = products.product_unit_id')
-  }
-
-  scope :period_range, lambda  {
-    joins("where orders.order_placed_at
-            BETWEEN '#{@start_range.to_date}' and '#{@end_range.to_date}'")
-
-  }
-
-  def self.customer_report
-    Product.customer_report_query.as_json(except: :id)
+  def self.validate_date_range
+    return false if @start_range > @end_range
+    true
   end
 
-  def product_getter(report_type)
-    @product_getter = ProductGetter.new(report_type)
+  def self.product_display_fields
+    "products.product_name,
+     sum(order_details.qty_ordered) AS qty_purchased,
+     product_units.unit"
   end
 
-  def self.product_wise_report(report_type)
-    Product.product_wise_query(report_type)
-           .as_json(except: :id)
+  def self.product_summary_report(report_type, start_range, end_range)
+    if start_range.present? && end_range.present?
+      @start_range = start_range.to_date
+      @end_range = end_range.to_date
+      summary_with_date_range(report_type)
+    else
+      product_summary_query(report_type)
+    end
   end
 
-  def self.product_wise_query(report_type)
-    report_type_query(report_type)
-    Product.joins(:order_details)
-           .join_orders
-           .join_product_units
-           .select(product_columns + @column)
-           .group('products.product_name, product_units.unit' + @group_with_type)
+  def self.summary_with_date_range(report_type)
+    if validate_date_range
+      product_summary_query(report_type)
+      @result.where("#{@order_date} BETWEEN '#{@start_range}' and '#{@end_range}' ")
+    else
+      'Error: Invalid parameters.please check the url parameters'
+    end
   end
 
-  def self.create_periodic_report(report_type, start_range, end_range)
-    @start_range = start_range.to_date
-    @end_range = end_range.to_date
-    Product.periodic_report_query(report_type).as_json(except: :id)
+  def self.product_summary_query(report_type)
+    select_period, group_by_period = report_type_query(report_type)
+    @result = Product.joins([ order_details: [ order: :customer ]])
+                  .joins(:categories)
+                  .joins(:product_unit)
+                  .select(product_display_fields + select_period )
+                  .group("products.product_name,product_units.unit #{group_by_period}")
+                  .order(1)
   end
 
-  def self.periodic_report_query(report_type)
-    report_type_query(report_type)
-    Product.joins(:order_details)
-           .join_orders
-           .join_product_units
-           .period_range
-           .select(product_columns + @column)
-           .group('products.product_name, product_units.unit' + @group_with_type)
-  end
-
-  def self.product_summary_report
-    Product.joins([ order_details: [ order: :customer ]])
-        .joins(:categories)
-        .joins(:product_units)
-        .customer_columns
-        .group('1,2,3')
-        .order(1)
-  end
-
-  def self.product_by_period(report_type, start_range, end_range)
-    Product.joins(:order_details)
-           .join_orders
-           .join_product_units
-           .select(product_columns + @column)
-           .group('products.product_name, product_units.unit' + @group_with_type)
+  def self.report_type_query(report_type)
+    @order_date = 'orders.order_placed_at'
+    case report_type
+      when 'daily' then
+        [", to_char(#{@order_date},'YYYY-MM-DD') AS sold_by_day", ',sold_by_day']
+      when 'weekly' then
+        [", to_char(#{@order_date},'YYYY-WW') AS sold_by_week", ',sold_by_week']
+      when 'monthly' then
+        [", to_char(#{@order_date},'YYYY-MM') AS sold_by_month", ',sold_by_month']
+      else
+        ['', '']
+    end
   end
 end
 
